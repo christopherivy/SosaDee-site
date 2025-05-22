@@ -11,7 +11,7 @@ const projects = [
   },
   {
     id: 2,
-    title: "Show you off ft lil twinn ",
+    title: "Show you off ft lil twinn",
     year: "start",
     image: "Assets/cover-art/dj008.png",
     link: "https://www.youtube.com/watch?v=6ibJKMzkn_0&list=PL6VYAe7Ax71Bnkl2HeJwXGdgLdIb8rpWQ&index=1",
