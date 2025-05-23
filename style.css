@@ -222,6 +222,20 @@ body::before {
   }
 }
 
+/* Medium screens (tablets) */
+@media (max-width: 768px) {
+  .image-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Small screens (phones) */
+@media (max-width: 480px) {
+  .image-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* ===================NAVIGATION ====================== */
 .top-nav {
   position: fixed; /* changed from sticky */
@@ -383,4 +397,18 @@ body {
   display: block;
   object-fit: cover;
   border-radius: 45px;
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 768px) {
+  .image-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Small screens (phones) */
+@media (max-width: 480px) {
+  .image-grid {
+    grid-template-columns: 1fr;
+  }
 }
