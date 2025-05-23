@@ -251,3 +251,14 @@ function preloadImages() {
     img.src = project.image;
   });
 }
+
+// Hamburger Listener
+document.addEventListener("DOMContentLoaded", () => {
+  const toggle = document.querySelector(".nav-toggle");
+  const navLinks = document.querySelector(".nav-links");
+
+  toggle.addEventListener("click", () => {
+    toggle.classList.toggle("open");
+    navLinks.classList.toggle("open");
+  });
+});
