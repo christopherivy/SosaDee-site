@@ -7,28 +7,14 @@
     <title>Shows</title>
   </head>
   <body>
-    <nav class="top-nav">
-      <!-- Logo links home -->
-      <a href="index.html" class="nav-logo">
-        <img src="Assets/cover-art/logo.png" alt="Logo" />
-      </a>
-
-      <!-- Hamburger -->
-      <button class="nav-toggle" aria-label="Toggle navigation">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </button>
-
-      <!-- Links -->
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a target="_blank" href="https://www.instagram.com/sosadee__/">Social</a></li>
-        <li><a target="_blank" href="https://linktr.ee/SosaDeeMusic">Link Tree</a></li>
-        <li><a target="_blank" href="https://www.youtube.com/@sosadee">Music</a></li>
-        <li><a href="shows.html">Shows</a></li>
-      </ul>
-    </nav>
+    <div id="nav-placeholder"></div>
+    <script>
+      fetch("/components/nav.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("nav-placeholder").innerHTML = data;
+        });
+    </script>
 
     <main class="shows-container">
       <div class="image-grid">
