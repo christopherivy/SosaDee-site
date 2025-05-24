@@ -262,14 +262,3 @@ document.addEventListener("DOMContentLoaded", () => {
     navLinks.classList.toggle("open");
   });
 });
-
-//The Land
-document.addEventListener("DOMContentLoaded", () => {
-  const cards = document.querySelectorAll(".art-option");
-  cards.forEach((card) => {
-    card.addEventListener("click", () => {
-      cards.forEach((c) => c.classList.remove("active"));
-      card.classList.add("active");
-    });
-  });
-});
